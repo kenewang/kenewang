@@ -14,10 +14,8 @@ body {
     background-color: #121212;
     /* Dark background color */
     color: #fff;
-    /* Light text color */
-
-
-    /* ______________________ */
+    padding-top: 70px;
+        /* Adjust this value to match the height of your header */
 }
 
 header {
@@ -25,6 +23,11 @@ header {
     color: #fff;
     padding: 1rem 0;
     text-align: center;
+    position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
 }
 
 nav ul {
@@ -32,10 +35,12 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 20px;
+    
 }
 
 nav ul li {
     display: inline;
+    
 }
 
 nav ul li a {
@@ -61,6 +66,7 @@ nav ul li a:hover {
     color: #fff;
     text-align: center;
     text-shadow: 0 0 2px #00b3ff;
+    
 
 
     position: relative;
