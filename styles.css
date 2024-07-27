@@ -8,6 +8,16 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+/* 27 June @10:38 
+    _________________________*/
+
+    background-color: #121212;
+    /* Dark background color */
+    color: #fff;
+    /* Light text color */
+
+
+    /* ______________________ */
 }
 
 header {
@@ -134,7 +144,34 @@ nav ul li a:hover {
     font-size: 2rem;
 }
 
-/* 27 Jul changes
+/* 27 Jul changes @10:44______________ */
+
+/* Experience Section Styling */
+.experience-container {
+    background-color: #1e1e1e;
+    padding: -8rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0.5rem;
+    text-align: left;
+
+    width: 520px;
+}
+
+
+.Experience {
+    position: relative;
+    left: 10px;
+}
+
+
+/* __________________________________ */
+
+
+
+
+
+/* 27 Jul changes @07:00
 ---------------------------------- */
 
 .social-media-icons {
@@ -164,6 +201,7 @@ nav ul li a:hover {
 .dates {
     position: relative;
     left: 145px;
+    
 }
 
 .date2 {
