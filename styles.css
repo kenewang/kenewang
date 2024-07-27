@@ -40,13 +40,16 @@ nav ul li {
 
 nav ul li a {
     color: #fff;
-    text-decoration: none;
+    text-decoration: whitesmoke;
     padding: 0.5rem;
 }
 
 nav ul li a:hover {
     background: #555;
     border-radius: 5px;
+    color: #98daf6;
+    
+        /* Change text color to gold on hover */
 }
 
 .hero {
@@ -57,18 +60,20 @@ nav ul li a:hover {
     align-items: center;
     color: #fff;
     text-align: center;
+    text-shadow: 0 0 2px #00b3ff;
 
 
     position: relative;
     overflow: hidden;
     /* To ensure the typing effect stays within bounds */
+
 }
 
 .typing-container {
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 0.15em solid orange;
+    border-right: 0.15em solid #00b3ff;
     /* Cursor effect */
     animation: typing 4s steps(50, end), blink-caret 0.75s step-end infinite;
 
@@ -77,6 +82,7 @@ nav ul li a:hover {
 .para {
     position: relative;
     right: 40px;
+    
 }
 
 .no-cursor {
@@ -102,16 +108,19 @@ nav ul li a:hover {
     }
 
     50% {
-        border-color: orange;
+        border-color: #00b3ff;
     }
 }
 
 /* Adjust the about section styling */
 .profile-image {
-    margin-left: 30px;
+    margin-left: 1px;
     text-align: left;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 .about-section {
     display: flex;
     align-items: left;
@@ -124,6 +133,7 @@ nav ul li a:hover {
     position: relative;
     bottom: 35px;
     text-align: justify;
+
 }
 
 .resume {
@@ -137,8 +147,21 @@ nav ul li a:hover {
     text-align: center;
 }
 
+.about h2 {
+    margin-bottom: 1 rem;
+    font-size: 2rem;
+    /* flicker
+    ______________________ */
+
+
+
+    -webkit-animation: tracking-in-expand 3s 3s infinite both;
+    animation: tracking-in-expand 3s 3s infinite both;
+
+
+    /* _________________________ */
+}
 .resume h2,
-.about h2,
 .contact h2 {
     margin-bottom: 1rem;
     font-size: 2rem;
@@ -151,6 +174,7 @@ nav ul li a:hover {
     background-color: #1e1e1e;
     padding: -8rem;
     border-radius: 8px;
+        /*higher adds a round edge*/
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: 0.5rem;
     text-align: left;
@@ -215,3 +239,42 @@ footer {
     text-align: center;
     padding: 1rem 0;
 }
+/* 
+flicker 
+
+________________________________-*/
+
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+/*____________________________________________ */
