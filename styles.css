@@ -5,6 +5,36 @@
     box-sizing: border-box;
 }
 
+.boxer {
+    background-color: #1e1e1e;
+    padding: 1.6rem;
+    border-radius: 8px;
+    /*higher adds a round edge*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0.6em;
+    text-align: center;
+
+    width: 45%;
+    position: relative;
+    bottom: 7rem;
+    left: 530px;
+    color: #fff;
+}
+
+.arrow {
+
+
+    color: #fff;
+    cursor: pointer;
+    margin: 1rem;
+
+}
+
+.quote {
+
+    color: #fff;
+
+}
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -17,6 +47,7 @@ body {
     padding-top: 70px;
         /* Adjust this value to match the height of your header */
 }
+
 
 header {
     background: #333;
@@ -42,6 +73,7 @@ nav ul li {
     display: inline;
     
 }
+
 
 nav ul li a {
     color: #fff;
@@ -139,6 +171,7 @@ html {
     position: relative;
     bottom: 35px;
     text-align: justify;
+
 
 }
 
