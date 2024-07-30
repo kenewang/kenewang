@@ -9,14 +9,16 @@
     background-color: #1e1e1e;
     padding: 1.6rem;
     border-radius: 8px;
+
     /*higher adds a round edge*/
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: 0.6em;
     text-align: center;
+    padding: 44px;
 
     width: 45%;
     position: relative;
-    bottom: 7rem;
+    bottom: 9.4rem;
     left: 530px;
     color: #fff;
 }
@@ -84,6 +86,7 @@ nav ul li {
     display: inline;
     
 }
+
 
 
 nav ul li a {
@@ -232,6 +235,39 @@ html {
     width: 520px;
 }
 
+/* button 
+
+_____________________________________*/
+
+
+.download-btn {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+    left: 390px;
+    bottom: 8px;
+}
+
+.download-btn .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    fill: currentColor;
+
+}
+
+.download-btn:hover {
+    background-color: #555;
+}
+
+/* _______________________________________ */
 
 .Experience {
     position: relative;
