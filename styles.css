@@ -34,6 +34,17 @@
 
     color: #fff;
 
+    /* animation 30 Jul*/
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+        -ms-background-clip: text;
+        -ms-text-fill-color: transparent;
+        background-clip: text;
+    
+        background-image: linear-gradient(45deg,
+                #7794ff, #44107A, #FF1361, #FFF800);
 }
 body {
     font-family: Arial, sans-serif;
@@ -317,3 +328,4 @@ ________________________________-*/
 
 
 /*____________________________________________ */
+/* animation 30 july */
