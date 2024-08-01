@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'custom';
+    src: url(TwCenMT.ttf);
+}
 /* Basic Reset */
 * {
     margin: 0;
@@ -125,7 +129,7 @@
     gap: 20px;
 }
 body {
-    font-family: Arial, sans-serif;
+    
     line-height: 1.6;
 /* 27 June @10:38 
     _________________________*/
@@ -204,7 +208,7 @@ nav ul li a:hover {
     overflow: hidden;
     border-right: 0.15em solid #00b3ff;
     /* Cursor effect */
-    animation: typing 4s steps(50, end), blink-caret 0.75s step-end infinite;
+    animation: typing 6s steps(60, end), blink-caret 0.75s step-end infinite;
 
 }
 
@@ -382,13 +386,13 @@ _____________________________________*/
 
 .dates {
     position: relative;
-    left: 130px;
+    left: 150px;
     
 }
 
 .date2 {
     position: relative;
-    left: 300px;
+    left: 305px;
 }
 
 footer {

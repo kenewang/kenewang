@@ -41,5 +41,5 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(() => {
         typingText.classList.remove("typing-container");
         typingText.classList.add("no-cursor");
-    }, 4000); // Match the duration of the typing animation (4s)
+    }, 5000); // Match the duration of the typing animation (6s)
 });
