@@ -2,7 +2,7 @@
     font-family: 'custom';
     src: url(TwCenMT.ttf);
 }
-/* Basic Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -15,13 +15,13 @@
     padding: 1.6rem;
     border-radius: 8px;
 
-    /*higher adds a round edge*/
+
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: 0.6em;
     text-align: center;
     padding: 44px;
 
-    width: 45%;
+    width: 58.5%;
     position: relative;
     bottom: 9.4rem;
     left: 530px;
@@ -41,7 +41,7 @@
 
     color: #fff;
 
-    /* animation 30 Jul*/
+    
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         -moz-background-clip: text;
@@ -56,15 +56,15 @@
 .detail {
     background-color: #1e1e1e;
     padding: 0;
-    /* Remove padding */
+    
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: 0.6rem;
     text-align: left;
-    /* Align text to the left */
+    
     width: 98%;
     position: relative;
-    bottom: 9.4rem;
+    bottom: 7.5rem;
     right: 1px;
     color: #fff;
 }
@@ -75,7 +75,7 @@
 
 .detail summary {
     padding: 1.6rem;
-    /* Add padding to the summary element if needed */
+
     cursor: pointer;
 }
 
@@ -113,9 +113,6 @@
 }
 
 
-
-
-
 .detail[open] .games-container {
     display: flex;
     flex-direction: column;
@@ -131,14 +128,13 @@
 body {
     
     line-height: 1.6;
-/* 27 June @10:38 
-    _________________________*/
+
 
     background-color: #121212;
-    /* Dark background color */
+
     color: #fff;
     padding-top: 70px;
-        /* Adjust this value to match the height of your header */
+        
     
 }
 
@@ -181,8 +177,9 @@ nav ul li a:hover {
     border-radius: 5px;
     color: #98daf6;
     
-        /* Change text color to gold on hover */
+    
 }
+
 
 .hero {
     background: url('rime_on_trees_forest-wallpaper-1366x768.jpg') no-repeat center center/cover;
@@ -194,11 +191,9 @@ nav ul li a:hover {
     text-align: center;
     text-shadow: 0 0 2px #00b3ff;
     
-
-
     position: relative;
     overflow: hidden;
-    /* To ensure the typing effect stays within bounds */
+    
 
 }
 
@@ -207,20 +202,22 @@ nav ul li a:hover {
     white-space: nowrap;
     overflow: hidden;
     border-right: 0.15em solid #00b3ff;
-    /* Cursor effect */
+    
     animation: typing 6s steps(60, end), blink-caret 0.75s step-end infinite;
+
 
 }
 
 .para {
     position: relative;
     right: 40px;
+    font-size: x-large;
     
 }
 
 .no-cursor {
     border-right: none;
-    /* Remove the blinking cursor */
+    
 }
 
 @keyframes typing {
@@ -245,7 +242,7 @@ nav ul li a:hover {
     }
 }
 
-/* Adjust the about section styling */
+
 .profile-image {
     margin-left: 1px;
     text-align: left;
@@ -284,8 +281,7 @@ html {
 .about h2 {
     margin-bottom: 1 rem;
     font-size: 2rem;
-    /* flicker
-    ______________________ */
+
 
 
 
@@ -293,7 +289,7 @@ html {
     animation: tracking-in-expand 3s 3s infinite both;
 
 
-    /* _________________________ */
+
 }
 .resume h2,
 .contact h2 {
@@ -301,14 +297,12 @@ html {
     font-size: 2rem;
 }
 
-/* 27 Jul changes @10:44______________ */
 
-/* Experience Section Styling */
 .experience-container {
     background-color: #1e1e1e;
     padding: -8rem;
     border-radius: 8px;
-        /*higher adds a round edge*/
+    
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: 0.5rem;
     text-align: left;
@@ -316,9 +310,7 @@ html {
     width: 520px;
 }
 
-/* button 
 
-_____________________________________*/
 
 
 .download-btn {
@@ -348,7 +340,6 @@ _____________________________________*/
     background-color: #555;
 }
 
-/* _______________________________________ */
 
 .Experience {
     position: relative;
@@ -356,14 +347,6 @@ _____________________________________*/
 }
 
 
-/* __________________________________ */
-
-
-
-
-
-/* 27 Jul changes @07:00
----------------------------------- */
 
 
 
@@ -377,7 +360,7 @@ _____________________________________*/
     transform: scale(1.2);
 }
 
-/* ------------------------------- */
+
 
 .container {
     border: 2px dashed cyan;
@@ -401,10 +384,7 @@ footer {
     text-align: center;
     padding: 1rem 0;
 }
-/* 
-flicker 
 
-________________________________-*/
 
 
 @-webkit-keyframes tracking-in-expand {
@@ -439,5 +419,3 @@ ________________________________-*/
 
 
 
-/*____________________________________________ */
-/* animation 30 july */

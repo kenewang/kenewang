@@ -43,3 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
         typingText.classList.add("no-cursor");
     }, 5000); // Match the duration of the typing animation (6s)
 });
+
+
+
