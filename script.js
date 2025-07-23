@@ -32,30 +32,31 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
 const div = document.querySelector(".intro_heading");
 const intro_heading = "Hello, I'm Kenewang Oganne";
 
-let typingTimeout; // to manage ongoing timeouts
+let typingTimeout;
+let currentSizeCategory = window.innerWidth <= 430 ? "mobile" : "desktop";
 
-function textTypingEffect(element, intro_heading, i = 0) {
+function textTypingEffect(element, text, i = 0) {
   if (i === 0) {
     element.textContent = "";
-    clearTimeout(typingTimeout); // stop any previous typing
+    clearTimeout(typingTimeout);
   }
 
-  element.textContent += intro_heading[i];
+  element.textContent += text[i];
 
-  if (i === intro_heading.length - 1) {
-    return;
-  }
+  if (i === text.length - 1) return;
 
-  typingTimeout = setTimeout(
-    () => textTypingEffect(element, intro_heading, i + 1),
-    70
-  );
+  typingTimeout = setTimeout(() => textTypingEffect(element, text, i + 1), 150);
 }
 
-// Initial run
+// Run on first load
 textTypingEffect(div, intro_heading);
 
-// Restart typing on every screen resize
+// Only trigger when screen crosses 430px threshold
 window.addEventListener("resize", () => {
-  textTypingEffect(div, intro_heading);
+  const newSizeCategory = window.innerWidth <= 430 ? "mobile" : "desktop";
+
+  if (newSizeCategory !== currentSizeCategory) {
+    currentSizeCategory = newSizeCategory;
+    textTypingEffect(div, intro_heading);
+  }
 });
