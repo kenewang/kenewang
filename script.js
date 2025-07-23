@@ -1,48 +1,61 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const quotes = [
-        "Humility is not thinking less of yourself, but thinking of yourself less. - C.S. Lewis",
-        "The only limit to our realization of tomorrow is our doubts of today. - Franklin D. Roosevelt",
-        "Do not wait to strike till the iron is hot; but make it hot by striking. - William Butler Yeats",
-        "Whether you think you can or you think you can't, you're right. - Henry Ford",
-        "The best way to predict your future is to create it. - Peter Drucker"
-    ];
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("mobile-nav-links");
 
-    let currentQuoteIndex = 0;
-    const quoteText = document.getElementById('quote-text');
-    const leftArrow = document.getElementById('left-arrow');
-    const rightArrow = document.getElementById('right-arrow');
+const hamburgerIcon = menuToggle.querySelector(".hamburger-icon");
+const closeIcon = menuToggle.querySelector(".close-icon");
 
-    function showQuote(index) {
-        quoteText.textContent = quotes[index];
-    }
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
 
-    leftArrow.addEventListener('click', function () {
-        currentQuoteIndex = (currentQuoteIndex > 0) ? currentQuoteIndex - 1 : quotes.length - 1;
-        showQuote(currentQuoteIndex);
-    });
+  const menuOpen = navLinks.classList.contains("show");
+  hamburgerIcon.style.display = menuOpen ? "none" : "block";
+  closeIcon.style.display = menuOpen ? "block" : "none";
 
-    rightArrow.addEventListener('click', function () {
-        currentQuoteIndex = (currentQuoteIndex < quotes.length - 1) ? currentQuoteIndex + 1 : 0;
-        showQuote(currentQuoteIndex);
-    });
-
-    // Initialize with the first quote
-    showQuote(currentQuoteIndex);
+  document.body.classList.toggle("menu-open", menuOpen);
 });
 
+// Close nav menu when a link is clicked
+document.querySelectorAll(".nav-links a").forEach((link) => {
+  link.addEventListener("click", () => {
+    // Hide the nav menu
+    document.getElementById("mobile-nav-links").classList.remove("show");
 
-document.addEventListener("DOMContentLoaded", function () {
-    const typingText = document.querySelector(".hero-content h1.typing-container");
+    // Show the hamburger icon again
+    document.querySelector(".hamburger-icon").style.display = "block";
+    document.querySelector(".close-icon").style.display = "none";
 
-    // Ensure the width is set for typing effect
-    typingText.style.width = `${typingText.scrollWidth}px`;
-
-    // Remove the cursor after the typing animation ends
-    setTimeout(() => {
-        typingText.classList.remove("typing-container");
-        typingText.classList.add("no-cursor");
-    }, 5000); // Match the duration of the typing animation (6s)
+    // Unhide the main content
+    document.body.classList.remove("menu-open");
+  });
 });
 
+const div = document.querySelector(".intro_heading");
+const intro_heading = "Hello, I'm Kenewang Oganne";
 
+let typingTimeout; // to manage ongoing timeouts
 
+function textTypingEffect(element, intro_heading, i = 0) {
+  if (i === 0) {
+    element.textContent = "";
+    clearTimeout(typingTimeout); // stop any previous typing
+  }
+
+  element.textContent += intro_heading[i];
+
+  if (i === intro_heading.length - 1) {
+    return;
+  }
+
+  typingTimeout = setTimeout(
+    () => textTypingEffect(element, intro_heading, i + 1),
+    70
+  );
+}
+
+// Initial run
+textTypingEffect(div, intro_heading);
+
+// Restart typing on every screen resize
+window.addEventListener("resize", () => {
+  textTypingEffect(div, intro_heading);
+});
