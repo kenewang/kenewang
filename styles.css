@@ -193,10 +193,11 @@ body.menu-open main {
   padding: 0.8rem 1rem;
   margin-block: 1rem 0;
   margin-inline: auto;
-  background-image: linear-gradient(to top, #363b3e, #407b92, #9cc9d4);
+  /* background-image: linear-gradient(to top, #363b3e, #407b92, #9cc9d4); */
   border: 1px solid hsl(260deg 100% 95%);
   border-radius: 0.3rem;
   overflow: hidden;
+  background: linear-gradient(rgb(1, 33, 45), rgb(10, 45, 54));
 }
 
 .details__summary {
