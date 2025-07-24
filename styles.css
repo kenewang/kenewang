@@ -35,10 +35,16 @@ body {
 main {
   display: flex;
   flex-direction: column;
+  padding-top: 70px;
 }
 
 header {
-  position: relative;
+  background: linear-gradient(rgb(1, 33, 45), rgb(10, 45, 54));
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -49,13 +55,17 @@ header {
   min-width: 0;
   text-align: center;
   color: #fff;
-  border-radius: 5px;
+
+  backdrop-filter: blur(1px); /* optional: glassy effect */
 }
 
-.hamburger-icon,
 .close-icon {
+  width: 20px;
+  height: 20px;
+}
+.hamburger-icon {
   width: 30px;
-  height: auto;
+  height: 40px;
 }
 
 .intro {
@@ -421,7 +431,7 @@ footer {
   header {
     height: 3rem;
 
-    background: none;
+    background: linear-gradient(rgb(1, 33, 45), rgb(10, 45, 54));
   }
 
   #desktop-nav-links {
