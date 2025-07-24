@@ -222,11 +222,13 @@ body.menu-open main {
 }
 
 .summary-paragraph {
+  font-size: clamp(1rem, 3vw, 1.5rem);
   margin-block: 0.5rem;
   font-weight: 300;
   color: white;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
     1px 1px 0 black;
+  text-align: justify;
 }
 
 .details__summary::before {
