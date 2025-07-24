@@ -222,9 +222,10 @@ body.menu-open main {
 }
 
 .summary-paragraph {
-  font-size: clamp(1rem, 3vw, 1.5rem);
+  font-size: 1rem;
+  letter-spacing: normal;
   margin-block: 0.5rem;
-  font-weight: 300;
+  font-weight: 200;
   color: white;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
     1px 1px 0 black;
