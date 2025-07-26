@@ -415,7 +415,7 @@ footer {
 }
 
 /* DESKTOP STYLES */
-@media (min-width: 430px) {
+@media screen and (min-width: 430px) {
   html {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url("photo-1648831832103-4c7e30e72183.jpeg");
