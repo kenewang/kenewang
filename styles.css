@@ -641,7 +641,8 @@ footer {
   .postgreSQL,
   .docker,
   .git,
-  .seaweed {
+  .seaweed,
+  .docker {
     display: flex;
     align-items: center;
     gap: 0.5rem;
