@@ -76,6 +76,7 @@ header {
   align-items: center;
   margin: 2px;
   padding: 2px;
+  margin-top: 0.5rem;
   border-radius: 5px;
 }
 
@@ -187,14 +188,27 @@ body.menu-open main {
 
 .projects {
   border-top: white solid;
-  margin: 0.5rem;
-  padding: 0.5rem;
+
   border-bottom: white solid;
+  position: relative;
+  padding: 0.5rem;
+  margin: 1rem 0.5rem;
+
+  /* background-image: linear-gradient(to top, #363b3e, #407b92, #9cc9d4); */
+  border: 1px solid hsl(260deg 100% 95%);
+  border-radius: 0.3rem;
+  overflow: hidden;
+  background: linear-gradient(rgb(1, 33, 45), rgb(10, 45, 54));
 }
 
 .projects h2 {
   color: white;
   margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+.title {
+  color: white;
+  font-size: 1.5rem;
 }
 
 .details {
@@ -210,17 +224,6 @@ body.menu-open main {
   background: linear-gradient(rgb(1, 33, 45), rgb(10, 45, 54));
 }
 
-.details__summary {
-  padding-inline: 2rem;
-  position: relative;
-  font-weight: 700;
-  cursor: pointer;
-  color: white;
-  font-size: 1.5rem;
-  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
-    1px 1px 0 black;
-}
-
 .summary-paragraph {
   font-size: 1rem;
   letter-spacing: normal;
@@ -232,12 +235,11 @@ body.menu-open main {
   text-align: justify;
 }
 
-.details__summary::before {
-  content: "»»";
-  position: absolute;
-  inset-inline-start: 0.1rem;
-  inset-block-start: -0.05rem;
-  transition: rotate 0.2s;
+.lint-to {
+  margin-bottom: 0.5rem;
+}
+.lint-to a {
+  color: white;
 }
 
 summary::-webkit-details-marker,
@@ -245,23 +247,9 @@ summary::marker {
   display: none;
 }
 
-summary {
-  list-style-type: none;
-}
 .details[open] .details__summary::before {
   rotate: 90deg;
   inset-block-start: 0.05rem;
-}
-
-.details__content a {
-  text-decoration: none;
-  color: white;
-  font-weight: 300;
-}
-
-.details__content a:hover {
-  text-decoration: underline;
-  color: lightcyan;
 }
 
 .skills {
@@ -274,13 +262,13 @@ summary {
 .legend {
   position: relative;
   bottom: 1.2rem;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   background: linear-gradient(to top, darkcyan, darkcyan, #ffffff);
   color: white;
   border-radius: 5px;
   padding: 0.3rem;
-  width: 3.5rem;
+  width: 4.2rem;
   text-align: justify;
 }
 
@@ -302,8 +290,8 @@ summary {
   color: white;
   margin-bottom: 0.3rem;
   padding: 0.3rem;
-  width: 6rem;
-  border-radius: 5px;
+  width: 10rem;
+  font-size: 1.8rem;
 }
 
 .label-value {
@@ -313,7 +301,7 @@ summary {
   color: white;
   padding: 0.4rem 0.8rem;
   margin: 0.3rem;
-  font-size: 0.85rem;
+  font-size: 1rem;
   border-radius: 5px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -450,6 +438,7 @@ footer {
     margin: 0 auto;
     z-index: 10;
     list-style-type: none;
+    font-weight: 500;
   }
 
   #desktop-nav-links a {
@@ -486,10 +475,13 @@ footer {
   }
 
   .timeline-item,
-  .timeline-dot,
+  .share2teach-dot,
+  .upcoming-dot,
+  .upcoming-name,
   .timeline-content,
-  .project-name,
-  .brief,
+  .share2teach-name,
+  .share2teach-brief,
+  .upcoming-brief,
   .visit img {
     display: block;
   }
@@ -518,10 +510,21 @@ footer {
     width: 98%;
   }
 
-  .timeline-dot {
+  .share2teach-dot {
     position: absolute;
     left: -5px;
-    top: 5px;
+    top: 0.4rem;
+    width: 18px;
+    height: 18px;
+    border: 3px solid white;
+    border-radius: 50%;
+    z-index: 2;
+  }
+
+  .upcoming-dot {
+    position: absolute;
+    left: -5px;
+    top: 1.1rem;
     width: 18px;
     height: 18px;
     border: 3px solid white;
@@ -533,18 +536,42 @@ footer {
     margin-left: 20px;
   }
 
-  .project-name {
+  .share2teach-name {
     font-size: 1.5rem;
     margin: 0;
+    position: relative;
+    top: 0.1rem;
     color: white;
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
       1px 1px 0 black;
   }
 
-  .brief {
+  .upcoming-name {
+    font-size: 1.5rem;
+    margin: 0;
+    position: relative;
+    top: 0.8rem;
+    color: white;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+      1px 1px 0 black;
+  }
+
+  .share2teach-brief {
     font-size: 1.2rem;
     color: white;
     margin-top: 5px;
+    text-align: justify;
+    font-weight: 500;
+    width: 95%;
+    margin-bottom: 1rem;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+      1px 1px 0 black;
+  }
+
+  .upcoming-brief {
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 0.9rem;
     text-align: justify;
     font-weight: 500;
     width: 95%;
