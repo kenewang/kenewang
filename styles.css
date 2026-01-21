@@ -262,7 +262,7 @@ summary::marker {
 .legend {
   position: relative;
   bottom: 1.2rem;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: bold;
   background: linear-gradient(to top, darkcyan, darkcyan, #ffffff);
   color: white;
@@ -291,7 +291,7 @@ summary::marker {
   margin-bottom: 0.3rem;
   padding: 0.3rem;
   width: 10rem;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 .label-value {
@@ -430,15 +430,16 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 6rem;
-    position: absolute;
+    gap: 2rem;
+    position: relative;
     top: 0.3rem;
     left: 0;
     right: 0;
-    margin: 0 auto;
+    margin-right: auto;
     z-index: 10;
     list-style-type: none;
-    font-weight: 500;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
   }
 
   #desktop-nav-links a {
