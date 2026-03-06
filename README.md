@@ -75,7 +75,7 @@
 </a>
 
 <a href="https://kenewang.github.io/kenewang/">
-  <img src="https://img.shields.io/badge/Portfolio-Website-black?style=for-the-badge&logo=firefox&logoColor=white" height="25"/>
+  <img src="https://img.shields.io/badge/Portfolio-black?style=for-the-badge&logo=firefox&logoColor=white" height="25"/>
 </a>
 
 </div>
