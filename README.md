@@ -74,7 +74,7 @@
   <img src="https://img.shields.io/static/v1?message=WhatsApp&logo=whatsapp&label=&color=25D366&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="whatsapp logo" />
 </a>
 
-<a href="https://yourwebsite.com" target="_blank">
+<a href="https://kenewang.github.io/kenewang/" target="_blank">
   <img src="https://img.shields.io/static/v1?message=Portfolio&logo=internet-explorer&label=&color=0A66C2&logoColor=white&labelColor=&style=for-the-badge" height="25" alt="portfolio website"/>
 </a>
 
